@@ -8,7 +8,7 @@ if(file_exists("../".$filename)){
     $layout = str_replace("{{main}}",$body, $layout);
 } else {
     $body = file_get_contents("../home.htm");
-    $layout = str_replace("{{main}}",$body, $layout);
+    $layout = str_replace("{{main}}","없습니다.", $layout);
 }
 
 
